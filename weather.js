@@ -14,7 +14,7 @@ if (Meteor.isClient) {
   Template.temperature.events({
     'click button': function(){ 
       //increments temp by 5 
-      Session.set('number', Session.get('number')+5);
+      Session.set('number', Session.get('number') + 5);
 
     }
      
