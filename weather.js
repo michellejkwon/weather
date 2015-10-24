@@ -19,7 +19,7 @@ if (Meteor.isClient) {
     }
   }); */
 
-  Template.temperature.helpers({
+  Template.temperature.helpers({ 
     temperature: function () {
       return Session.get('temperature');
     }
@@ -27,9 +27,8 @@ if (Meteor.isClient) {
 
   Template.temperature.events({
     'click button': function(){
-      console.log(document.getElementById('input'));
-         Session.set('temperature', document.getElementById('input'));
-
+      console.log(document.getElementById('input').value);
+         Session.set('temperature', document.getElementById('input').value);
        }
   });
 }
