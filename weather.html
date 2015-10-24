@@ -1,24 +1,39 @@
 <head>
   <title>weather</title>
+
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Alegreya Sans SC">
   <link rel="stylesheet" type="text/css" href="weather.css">
+  
+  <style> 
+	body {
+		background-image: url(Rain.jpg);
+	}
+  </style>
+
 </head>
 
 <body>
+
   <h1 id="title">Daily Weather</h1>
 
-  <h1 id="temperature">236478</h1>
-
-  <form>
+  <!-- <form id = "form">
   	What do you think the weather is like?<br>
   <input type="text" name="guess">
   <br>
-</form>
+  </form>
+  -->
+
+  <p id = "form"> What do you think the weather is like? </p>
+  <textarea id = "box" rows="3" cols="70" placeholder = "Please type in the weather.">
+  </textarea>	
+  <br>
+  <br>
+
+  {{>temperature}}
 
 
 </body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name = "temperature"> 
+	<button id = "button">Increment Temperature</button>
+	<p id = "temp"> The temperature actually is {{number}}</p> 	
 </template>
