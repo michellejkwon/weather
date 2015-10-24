@@ -1,1 +1,17 @@
-/* CSS declarations go here */
+	#title{
+		color: #3601FF;
+		font-family: 'Alegreya Sans SC';
+		font-size: 6em;
+		text-align: center;
+	}
+
+	#temperature{
+		font-size: 10em;
+		text-align: center;
+		font-family: 'Alegreya Sans SC';
+	}
+
+	body{
+		background-image: url("Rain.jpg");
+		background-size: 100%;
+	}
