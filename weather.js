@@ -1,10 +1,10 @@
 if (Meteor.isClient) {
   // counter starts at 0
-  Session.setDefault('number',0);
+  Session.setDefault('temperature',0);
 
  
 
-  Template.temperature.helpers({
+ /* Template.temperature.helpers({
     number: function () {
       return Session.get('number');
     }
@@ -17,8 +17,18 @@ if (Meteor.isClient) {
       Session.set('number', Session.get('number')+5);
 
     }
-     
+  }); */
+
+  Template.temperature.helpers({
+    temperature: function () {
+      return Session.get('temperature');
+    }
   });
+
+  Template.temperature.events['click #submit'] = function() {
+        var tempInput = document.getElementById('input');
+        Session.set('temperature', tempInput);
+  })
 }
 
 if (Meteor.isServer) {
