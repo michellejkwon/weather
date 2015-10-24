@@ -1,11 +1,28 @@
 <head>
   <title>weather</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Alegreya Sans SC">
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
+<style>
+	#title{
+		color: #3601FF;
+		font-family: 'Alegreya Sans SC';
+		font-size: 6em;
+		text-align: center;
+	}
 
-  {{> hello}}
+	#temperature{
+		font-size: 10em;
+		text-align: center;
+		font-family: 'Alegreya Sans SC';
+	}
+</style>
+
+<body>
+  <h1 id="title">Daily Weather</h1>
+
+  <h1 id="temperature">236478</h1>
+
 </body>
 
 <template name="hello">
