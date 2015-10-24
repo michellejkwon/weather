@@ -32,9 +32,6 @@
 <body>
 
 
-
-<<<<<<< HEAD
-=======
 	<nav class = "navbar navbar-default">
 		<div class = "container-fluid">
 			<!--Logo-->
@@ -63,8 +60,7 @@
 </div>
  
 	
-  
->>>>>>> origin/master
+
 
   <p id = "form"> What do you think the weather is like? </p>
   <textarea id = "box" rows="3" cols="70" placeholder = "Please type in the weather.">
@@ -72,17 +68,11 @@
   <br>
   <br>
 
-  
+  {{>temperature}}
 
 </body>
 <template name = "temperature"> 
 	<button id = "button">Increment Temperature</button>
-<<<<<<< HEAD
-	<p id = "temp"> The temperature actually is {{number}}</p> 	
-</template>
-=======
-	<p id = "temp"> The temperature actually is {{number}}</p> 	
+	<p id = "temp"> The temperature actually is {{temperature}}</p> 	
 </template>
 
-
->>>>>>> origin/master

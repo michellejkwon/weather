@@ -25,10 +25,13 @@ if (Meteor.isClient) {
     }
   });
 
-  Template.temperature.events['click #submit'] = function() {
-        var tempInput = document.getElementById('input');
-        Session.set('temperature', tempInput);
-  })
+  Template.temperature.events({
+    'click button': function(){
+      console.log(document.getElementById('input'));
+         Session.set('temperature', document.getElementById('input'));
+
+       }
+  });
 }
 
 if (Meteor.isServer) {
