@@ -3,6 +3,7 @@
 		font-family: 'Alegreya Sans SC';
 		font-size: 6em;
 		text-align: center;
+		background-color: lightBlue; 
 	}
 
 	#temperature{
@@ -12,5 +13,6 @@
 	}
 
 	body{
+		background-image: url("desktop/weather/Rain.jpg");
 		background-size: 100%;
 	}
