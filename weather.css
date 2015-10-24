@@ -3,13 +3,38 @@
 		font-family: 'Alegreya Sans SC';
 		font-size: 6em;
 		text-align: center;
-		background-color: lightBlue; 
+		background-color: lightBlue;
 	}
 
 	#temperature{
 		font-size: 10em;
 		text-align: center;
 		font-family: 'Alegreya Sans SC';
+	}
+
+	#form {
+		text-align: center;
+		color: white;
+		font-size: 5em;
+	}
+
+	#temp {
+		text-align: center;
+		color: white;
+		font-size: 4em;
+	}
+
+	#button {
+		padding: center;	
+		border-radius: 10px;
+		font-family: 'Arial';
+		margin-float: 150px;
+		font-size: 50px;
+		margin-left: 33%;
+	}
+
+	#box {
+		margin-left: 34%;
 	}
 
 	body{
