@@ -6,19 +6,17 @@
 
 <body>
   <h1 id="title">Daily Weather</h1>
-
-  <h1 id="temperature">236478</h1>
+	{{>temperature}}
 
   <form>
   	What do you think the weather is like?<br>
   <input type="text" name="guess">
   <br>
 </form>
-
-
 </body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name = "temperature"> 
+	<button>Increment Temperature</button>
+	<p> The temperature is {{number}}</p> 	
 </template>
+
+
