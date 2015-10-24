@@ -1,11 +1,9 @@
 if (Meteor.isClient) {
   // counter starts at 0
-  Session.setDefault('number',0);
+  Session.setDefault('temperature',0);
 
- 
-
-  Template.temperature.helpers({
-    number: function () {
+ /*Template.temperature.helpers({
+    temperature: function () {
       return Session.get('number');
     }
   });
@@ -17,9 +15,21 @@ if (Meteor.isClient) {
       Session.set('number', Session.get('number') + 5);
 
     }
-     
+  }); */
+
+  Template.temperature.helpers({
+    temperature: function () {
+      return Session.get('temperature');
+    }
   });
-}
+
+  Template.temperature.events({
+        'click button': function() {
+        console.log(document.getElementById('input').value);
+        Session.set('temperature', document.getElementById('input').value);
+      }
+  }); 
+} 
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
