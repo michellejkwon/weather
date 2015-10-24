@@ -3,7 +3,11 @@
 		font-family: 'Alegreya Sans SC';
 		font-size: 6em;
 		text-align: center;
+<<<<<<< HEAD
 		background-color: lightBlue;
+=======
+		background-color: lightBlue; 
+>>>>>>> origin/master
 	}
 
 	#temperature{
